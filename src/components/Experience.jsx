@@ -50,7 +50,7 @@ const Experience = () => {
 
                 {technologies.map(({id,imgData,name,style,handle})=>{
                     return (
-                        <div key={id} className={` flex flex-col justify-between hover:animate-pulse shadow-md  duration-500 py-2 rounded-lg ${style}`}>
+                        <div key={id} className={` flex flex-col justify-between overflow-hidden hover:animate-pulse shadow-md  duration-500 py-2 rounded-lg ${style}`}>
                             <img src={imgData} alt="random" className=' hover:scale-105 duration-300 rounded-t-lg  w-[100%] h-[65%] mx-auto' />
                             <div className='flex h-full justify-center items-center flex-col'>
                                 <p className=' font-bold text-4xl font-signature mt-4'>{name}</p>
